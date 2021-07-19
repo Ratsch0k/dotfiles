@@ -1,0 +1,12 @@
+- defaults:
+    link:
+      create: true
+      relink: true
+
+- link:
+    ~/.config/fish: config/fish
+    ~/.config/i3: config/i3
+    ~/.config/tint2: config/tint2
+    ~/.config/rofi: config/rofi
+    ~/.config/kitty: config/kitty
+    ~/.bashrc: bashrc
