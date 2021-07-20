@@ -10,3 +10,4 @@
     ~/.config/rofi: config/rofi
     ~/.config/kitty: config/kitty
     ~/.bashrc: bashrc
+    ~/.config/nvim: config/nvim
