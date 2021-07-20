@@ -72,8 +72,8 @@ bindsym $mod+d exec --no-startup-id rofi -show drun
 
 # custom keybinds
 # $browser should be set to the primary browser, and $alt_browser to the alternativ
-set $browser firefox
-set $alt_browser brave
+set $browser brave
+set $alt_browser firefox
 bindsym $mod+b exec $browser
 bindsym $mod+Shift+b exec $alt_browser
 
