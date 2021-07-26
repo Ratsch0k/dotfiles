@@ -45,7 +45,7 @@ floating_modifier $mod
 exec setxkbmap de &
 
 # Start compositor
-exec --no-startup-id picom
+exec_always --no-startup-id picom --config ~/.config/picom/picom.conf
 
 # Start nitrogen
 exec --no-startup-id nitrogen --restore
@@ -59,6 +59,10 @@ bindsym $mod+Return exec kitty --single-instance
 
 # kill focused window
 bindsym $mod+Shift+q kill
+
+# add drop-down kitty terminal
+exec_always --no-startup-id kitti3
+bindsym $mod+n nop kitti3
 
 # start dmenu (a program launcher)
 # bindsym $mod+d exec --no-startup-id dmenu_run
