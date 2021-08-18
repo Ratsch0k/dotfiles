@@ -1,0 +1,9 @@
+#!/bin/sh
+
+MUTE_STATUS=$(pulsemixer --get-mute)
+
+if [ "$MUTE_STATUS" == "0" ]; then
+	echo "蓼"
+else
+	echo "遼"
+fi
