@@ -58,7 +58,7 @@ exec --no-startup-id tint2 -c ~/.config/tint2/amarena
 bindsym $mod+Return exec kitty --single-instance
 
 # lock screen
-bindsym $mod+l exec i3lock-fancy 
+bindsym $mod+Shift+l exec i3lock-fancy 
 
 # kill focused window
 bindsym $mod+Shift+q kill
