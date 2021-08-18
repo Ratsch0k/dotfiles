@@ -1417,7 +1417,7 @@ execp_icon_h = 0
 #-------------------------------------
 # Executor 7
 execp = new
-execp_command = echo ﮣ
+execp_command = ~/.scripts/battery-status
 execp_interval = 0
 execp_has_icon = 0
 execp_cache_icon = 1

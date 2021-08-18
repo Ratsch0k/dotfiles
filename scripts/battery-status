@@ -1,0 +1,33 @@
+#!/usr/bin/sh
+
+STATUS=$(acpi | awk '{print $3}')
+
+if [ "$STATUS" == "Charging," ]; then
+	echo ""	
+else
+	POWER=$(acpi | awk '{print $4}' | sed 's/,//' | sed 's/%//')
+
+	if [ $POWER -lt  5 ]; then
+		echo ""
+	elif [ $POWER -lt 15 ]; then
+		echo ""
+	elif [ $POWER -lt 25 ]; then
+		echo ""
+	elif [ $POWER -lt 35 ]; then
+		echo ""
+	elif [ $POWER -lt 45 ]; then
+		echo ""
+	elif [ $POWER -lt 55 ]; then
+		echo ""
+	elif [ $POWER -lt 65 ]; then
+		echo ""
+	elif [ $POWER -lt 75 ]; then
+		echo ""
+	elif [ $POWER -lt 85 ]; then
+		echo ""
+	elif [ $POWER -lt 95 ]; then
+		echo ""
+	else
+		echo ""
+	fi
+fi
