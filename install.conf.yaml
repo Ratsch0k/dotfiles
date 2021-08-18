@@ -13,3 +13,4 @@
     ~/.config/nvim: config/nvim
     ~/.config/picom: config/picom
     ~/.scripts: scripts
+    ~/.xprofile: xprofile

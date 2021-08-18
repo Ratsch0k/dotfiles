@@ -1,0 +1,4 @@
+#!/bin/sh
+
+# Add pip install to path
+export PATH=$PATH:~/.local/bin
