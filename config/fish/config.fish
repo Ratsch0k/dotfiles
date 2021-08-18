@@ -7,9 +7,5 @@ end
 # Include pip installs
 set -ax PATH ~/.local/bin
 
-
-if status is-login
-	startx
-end
-
+# Show system information
 neofetch
