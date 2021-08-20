@@ -9,8 +9,9 @@
     ~/.config/tint2: config/tint2
     ~/.config/rofi: config/rofi
     ~/.config/kitty: config/kitty
-    ~/.bashrc: bashrc
     ~/.config/nvim: config/nvim
     ~/.config/picom: config/picom
+    ~/.config/dunst: config/dunst
     ~/.scripts: scripts
     ~/.xprofile: xprofile
+    ~/.bashrc: bashrc
