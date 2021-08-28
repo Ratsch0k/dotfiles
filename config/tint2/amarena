@@ -1439,7 +1439,7 @@ execp_icon_h = 0
 #-------------------------------------
 # Executor 8
 execp = new
-execp_command = echo $(acpi | awk '{printf $4}') | sed 's/%//g' | sed 's/,//g'
+execp_command = ~/.scripts/battery-percentage
 execp_interval = 1
 execp_has_icon = 0
 execp_cache_icon = 1
