@@ -1,0 +1,14 @@
+#!/bin/sh
+
+INFO=$(acpi)
+
+FULL_PERCENTAGE=$(echo "$INFO" | awk '{printf $5}')
+PERCENTAGE=$(echo "$INFO" | awk '{printf $4}')
+
+if [ "$PERCENTAGE" == "charging," ] ; then
+	RESULT="$FULL_PERCENTAGE"
+else
+	RESULT="$PERCENTAGE"
+fi
+
+echo $(echo "$RESULT" | sed 's/%//g' | sed 's/,//g')
