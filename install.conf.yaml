@@ -13,6 +13,7 @@
     ~/.config/picom: config/picom
     ~/.config/dunst: config/dunst
     ~/.config/polybar: config/polybar
+    ~/.config/neofetch: config/neofetch
     ~/.scripts: scripts
     ~/.xprofile: xprofile
     ~/.bashrc: bashrc
