@@ -12,6 +12,7 @@
     ~/.config/nvim: config/nvim
     ~/.config/picom: config/picom
     ~/.config/dunst: config/dunst
+    ~/.config/polybar: config/polybar
     ~/.scripts: scripts
     ~/.xprofile: xprofile
     ~/.bashrc: bashrc
