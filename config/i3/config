@@ -52,7 +52,10 @@ exec --no-startup-id nitrogen --restore
 
 # Start tint2
 exec --no-startup-id tint2 -c ~/.config/tint2/amarena-dock-hide
-exec --no-startup-id tint2 -c ~/.config/tint2/amarena
+#exec --no-startup-id tint2 -c ~/.config/tint2/amarena
+
+# start polybars
+exec_always --no-startup-id ~/.config/polybar/launch.sh
 
 # start a terminal
 bindsym $mod+Return exec kitty --single-instance
@@ -68,12 +71,17 @@ bindsym $mod+p exec --no-startup-id mpc toggle
 bindsym $mod+o exec --no-startup-id mpc next
 bindsym $mod+Shift+o exec --no-startup-id mpc prev
 
+# Open small small terminal for music control
+exec_always --no-startup-id kitti3 -n kittimusic -p CT -s 0.5 0.5 -- ncmpcpp
+bindsym $mod+m nop kittimusic
+
 # kill focused window
 bindsym $mod+Shift+q kill
 
 # add drop-down kitty terminal
-exec_always --no-startup-id kitti3
-bindsym $mod+n nop kitti3
+exec_always --no-startup-id kitti3 -n tempterminal
+bindsym $mod+n nop tempterminal
+
 
 # start dmenu (a program launcher)
 # bindsym $mod+d exec --no-startup-id dmenu_run
