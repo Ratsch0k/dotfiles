@@ -4,7 +4,7 @@
  */
 
 configuration {
-	modi: 		 "window,drun,ssh,combi";
+	modi: 		 "window,drun,ssh,combi,power-menu:rofi-power-menu";
 	display-drun:    "Activate";
 	display-run:     "Execute";
 	display-window:  "Window";
@@ -34,7 +34,7 @@ configuration {
 	active-foreground:           @text-color;
 	selected-active-background:  @actbg;
 	active-background:           @selbg;
-	font: "FiraMono Nerd Font 11";
+	font: "JetBrains Mono Nerd Font 11";
 	line-margin:                 2;
 	line-padding:                2;
 	separator-style:             "none";
