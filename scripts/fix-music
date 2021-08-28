@@ -1,0 +1,8 @@
+#!/bin/sh
+
+# This scripts just restarts mopidy.
+# This is necessary if mopidy-spotify is enabled because it
+# just crashes right after boot because there is no internet connection.
+# Only way to fix it is to restart the service. 
+
+sudo systemctl restart mopidy
