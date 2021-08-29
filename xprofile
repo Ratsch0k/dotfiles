@@ -2,3 +2,6 @@
 
 # Add pip install to path
 export PATH=$PATH:~/.local/bin
+
+# Change ssh-askpass to xaskpass
+export SSH_ASKPASS=/usr/bin/xaskpass
