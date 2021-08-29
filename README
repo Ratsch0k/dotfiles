@@ -1,0 +1,34 @@
+# My Dotfiles
+My collection of dotfiles which fills my customized heart 
+
+The files customize the following applications:
+ - i3 (specifically, i3-gaps)
+ - tint2
+ - rofi
+ - kitty
+ - fish
+ - bash
+ - polybar
+
+## Required applications
+ - python
+ - pip
+ - dotbot
+
+
+## i3 Keybindings
+`$mod` is `alt`
+
+| Keybind | Action |
+| ------- | ------ |
+| `$mod+b` | primary browser (*brave*) |
+| `$mod+shift+b` | secondary browser (*firefox*) |
+| `$mod+p` | play/pause music (*mpc*) |
+| `$mod+o` | next song (*mpc*) |
+| `$mod+shift+o` | previous song (*mpc*) |
+| `$mod+m` | open popup kitty terminal for music control (*npmcpp*) |
+| `$mod+Return` | open kitty |
+| `$mod+n` | open popup terminal (*kitty*) |
+| `$mod+Shift+z` | lock screen (*i3lock-fancy*) | 
+| `$mod+t` | open nautilus |
+| `$mod+d` | open rofi |

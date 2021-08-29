@@ -61,7 +61,7 @@ exec_always --no-startup-id ~/.config/polybar/launch.sh
 bindsym $mod+Return exec kitty --single-instance
 
 # lock screen
-bindsym $mod+u exec i3lock-fancy 
+bindsym $mod+Shift+z exec i3lock-fancy 
 
 # open nautilus
 bindsym $mod+t exec nautilus
