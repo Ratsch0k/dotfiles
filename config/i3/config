@@ -114,6 +114,12 @@ set $alt_browser firefox
 bindsym $mod+b exec $browser
 bindsym $mod+Shift+b exec $alt_browser
 
+# open editor or ide
+set $editor code
+set $alt_editor kitty nvim
+bindsym $mod+c exec $editor
+bindsym $mod+Shift+c exec $alt_editor
+
 #
 # Starting from here, the keybinds are default i3 keybinds and not custom ones
 #
@@ -214,7 +220,7 @@ for_window [class=".*"] hide_edge_borders horizontal
 gaps inner 12
 
 # reload the configuration file
-bindsym $mod+Shift+c reload
+#bindsym $mod+Shift+c reload
 # restart i3 inplace (preserves your layout/session, can be used to upgrade i3)
 bindsym $mod+Shift+r restart
 # exit i3 (logs you out of your X session)
