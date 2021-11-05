@@ -14,11 +14,13 @@ configuration {
 
 * {
 	background-color:            #1a2026;
-	text-color:                  #caced6;
+
 	selbg:                       #4CB9D6;
 	actbg:                       #282c34;
 	urgbg:                       #FCDA98;
 	winbg:			     #DDEDED;
+
+	text-color:		     #FFFFFF;
 
 	selected-normal-foreground:  @winbg;
 	normal-foreground:           @text-color;
@@ -44,20 +46,27 @@ configuration {
 }
 
 window {
+	background-color: @background-color;
 	location:	 center;
 	anchor:		 center;
 	height:		 60%;
 	width:		 32%;
+	margin: 0;
+	padding: 0;
 	orientation: horizontal;
 	children:	 [mainbox];
+	border:		 0;
 }
 
 mainbox {
 	spacing:  0.8em;
+	padding: 10;
 	children: [ entry, listview, sidebar ];
 }
 
-button { padding: 5px 2px; }
+button {
+	padding: 	5px 2px;
+}
 
 button selected {
 	background-color: @active-background;
