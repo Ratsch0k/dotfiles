@@ -5,3 +5,6 @@ export PATH=$PATH:~/.local/bin
 
 # Change ssh-askpass to xaskpass
 export SSH_ASKPASS=/usr/bin/xaskpass
+
+# Start syndaemon to disable parts of touchpad if typing
+syndaemon -i 1.0 -t -d
